@@ -16,6 +16,10 @@ In the project directory, you can run:
 use are using json-server for login functionality: there is a list of users in db.json in root folder.
 you can enter username as admin and password as admin to login.
 
+### Username: admin
+### Password: admin
+
+
 ### Features
 
 For the first time when user opens the link user will be redirected to login page.
