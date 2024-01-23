@@ -18,9 +18,7 @@ const ItemChart = ({ data }) => {
   };
 
   return (
-    <div className="ag-pi-chart-container">
       <AgChartsReact options={options} />
-    </div>
   );
 };
 

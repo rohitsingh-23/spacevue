@@ -9,14 +9,12 @@ import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
   const [rowData, setRowData] = useState([]);
-  const [showDetails, setShowDetails] = useState(false);
   const [loading, setLoading] = useState(true);
   const [chartData, setChartData] = useState([]);
   const providerState = useContext(AuthContext);
   const navigate = useNavigate();
   const [gridApi, setGridApi] = useState();
   const piChartComp = useRef(null);
-
 
   const [columnDefs, setColDefs] = useState([
     { field: "mission" },
@@ -94,8 +92,10 @@ const Dashboard = () => {
       }
     });
     setChartData(tempChartData);
-    setShowDetails(true);
-    piChartComp.current.scrollIntoView({ behavior: 'smooth' });
+    alert(
+      `Click OK to see price distribution chart of ${tempChartData[0].company}`
+    );
+    piChartComp.current.scrollIntoView({ behavior: "smooth" });
   };
 
   const handleLogout = () => {
@@ -150,7 +150,9 @@ const Dashboard = () => {
             }}
           ></AgGridReact>
         </div>
-        <div ref={piChartComp}>{showDetails && <ItemChart data={chartData} />}</div>
+        <div className="ag-pi-chart-container" ref={piChartComp}>
+          {chartData.length > 0 ? <ItemChart data={chartData} /> : null}
+        </div>
       </div>
     )
   );
