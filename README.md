@@ -18,11 +18,11 @@ you can enter username as admin and password as admin to login.
 
 ### Features
 
-# for the first time when user opens the link user will be redirected to login page.
-# after successful login user will be redirected to home page wher user can find the detials in tabular form with sorting and filtering it is done by library ag-grid-react 
-# user can also download the filtered data in csv formate with "Export Data Button"
-# at the bottom of the page we can see a sample pi chart where it shows the price distribution of a company on missions.
-# when user clicks logout user will be again redirected to login page.
+for the first time when user opens the link user will be redirected to login page.
+after successful login user will be redirected to home page wher user can find the detials in tabular form with sorting and filtering it is done by library ag-grid-react 
+user can also download the filtered data in csv formate with "Export Data Button"
+at the bottom of the page we can see a the pi chart where it shows the price distribution of a company on a particular missions.
+when user clicks logout user will be again redirected to login page.
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
