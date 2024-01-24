@@ -10,9 +10,9 @@ const Login = () => {
   const navigate = useNavigate();
   const handleLogin = async (e) => {
     e.preventDefault();
-    axios.get("http://localhost:8080/users").then((res) => {
+    axios.get("https://json-server-uz5c.onrender.com/users").then((res) => {
       let flag = false;
-        const data = res.data;
+      const data = res.data;
       for (let i = 0; i < data.length; i++) {
         if (data[i].username == username && data[i].password == password) {
           providerState.loginUser(data[i]);
