@@ -14,7 +14,7 @@ export const AllRoutes = () => {
           element={
             <PrivateRoute>
               <Dashboard />
-             </PrivateRoute>
+            </PrivateRoute>
           }
         />
         <Route path="/dashboard/:id" element={<ItemChart />} />

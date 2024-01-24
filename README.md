@@ -22,15 +22,22 @@ you can enter username as admin and password as admin to login.
 
 ### Features
 
-For the first time when user opens the link user will be redirected to login page.
+1. For the first time when user opens the link user will be redirected to login page.
 
-After successful login user will be redirected to home page wher user can find the detials in tabular form with sorting and filtering it is done by library ag-grid-react.
+2. After successful login user will be redirected to home page wher user can find the detials in tabular form with sorting and filtering functionality. It is done by package "ag-grid-react".
 
-User can also download the filtered data in csv formate with "Export Data Button"
+3. On homepage User can see the successful missions in green color row and failed misssions in red color row
 
-At the bottom of the page we can see a the pi chart where it shows the price distribution of a company on a particular missions by clicking on Click Me Button.
+4. User can also download the filtered data in csv formate with "Export Data Button"
 
-When user clicks logout button user will be logged out and again redirected to login page.
+5. User can see the details with the help of chart by clicking on "See Chart" button.
+
+6. After clicking on See Chart button of a particular company user can see three types of chart.
+    a. Number of rockets over the year.
+    b. Budget over the year.
+    c. Price distribution over the year.
+
+7. When user clicks logout button user will be logged out and redirected to login page.
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
